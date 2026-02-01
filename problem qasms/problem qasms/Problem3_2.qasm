@@ -1,0 +1,29 @@
+OPENQASM 2.0;
+include "qelib1.inc";
+
+qreg q[2];
+
+cx q[0], q[1];
+
+// Rotation of -2pi/7
+
+t q[1]; h q[1]; s q[1]; t q[1]; h q[1]; s q[1]; t q[1]; h q[1]; t q[1]; h q[1];
+s q[1]; t q[1]; h q[1]; s q[1]; t q[1]; h q[1]; t q[1]; h q[1]; t q[1]; h q[1];
+t q[1]; h q[1]; t q[1]; h q[1]; t q[1]; h q[1]; s q[1]; t q[1]; h q[1]; t q[1];
+h q[1]; s q[1]; t q[1]; h q[1]; t q[1]; h q[1]; t q[1]; h q[1]; s q[1]; t q[1];
+h q[1]; s q[1]; t q[1]; h q[1]; t q[1]; h q[1]; t q[1]; h q[1]; t q[1]; h q[1];
+t q[1]; h q[1]; t q[1]; h q[1]; t q[1]; h q[1]; s q[1]; t q[1]; h q[1]; s q[1];
+t q[1]; h q[1]; t q[1]; h q[1]; t q[1]; h q[1]; s q[1]; t q[1]; h q[1]; t q[1];
+h q[1]; t q[1]; h q[1]; s q[1]; t q[1]; h q[1]; t q[1]; h q[1]; s q[1]; t q[1];
+h q[1]; t q[1]; h q[1]; s q[1]; t q[1]; h q[1]; s q[1]; t q[1]; h q[1]; s q[1];
+t q[1]; h q[1]; t q[1]; h q[1]; t q[1]; h q[1]; s q[1]; t q[1]; h q[1]; t q[1];
+h q[1]; s q[1]; t q[1]; h q[1]; s q[1]; t q[1]; h q[1]; s q[1]; t q[1]; h q[1];
+s q[1]; t q[1]; h q[1]; t q[1]; h q[1]; s q[1]; t q[1]; h q[1]; s q[1]; t q[1];
+h q[1]; s q[1]; t q[1]; h q[1]; t q[1]; h q[1]; t q[1]; h q[1]; s q[1]; t q[1];
+h q[1]; s q[1]; t q[1]; h q[1]; t q[1]; h q[1]; s q[1]; t q[1]; h q[1]; s q[1];
+t q[1]; h q[1]; t q[1]; h q[1]; s q[1]; t q[1]; h q[1]; s q[1]; t q[1]; h q[1];
+t q[1]; h q[1]; s q[1]; t q[1]; h q[1]; s q[1]; t q[1]; h q[1]; s q[1]; t q[1];
+h q[1];
+
+cx q[0], q[1];
+
